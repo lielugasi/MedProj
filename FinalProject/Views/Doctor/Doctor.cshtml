@@ -351,7 +351,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
-                        <p class="bold text-right" style="white-space: pre;">פתוח בימים א-ה  </p>
+                        <p class="bold text-right" style="white-space: pre;">Sunday-Thursday. 9AM-3PM  </p>
                     </div>
                 </div>
             </div>
@@ -369,7 +369,7 @@
 
             </div>
             <div style="display:flex; ">
-                <a href="~/" style="margin-right:10px; cursor:pointer;">דף הבית</a>
+                <a href="~/" style="margin-left:10px; cursor:pointer;">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             @*<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
@@ -410,7 +410,7 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>רשימת <b>לקוחות</b></h2>
+                            <h2>Customers <b>List</b></h2>
                         </div>
                         
                     </div>
@@ -424,10 +424,10 @@
                                     <label for="selectAllb"></label>
                                 </span>
                             </th>
-                            <th>שם</th>
-                            <th>טלפון</th>
-                            <th>אימייל</th>
-                            <th>פעולות</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>E-Mail</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -443,7 +443,7 @@
                             <td>12345</td>
                             <td>abc@abc</td>
                             <td>
-                                <a href="~/Client/Client" class="add"><i class="material-icons" data-toggle="tooltip" title="הוסף מרשם לפציינט">add</i></a>
+                                <a href="~/Client/Client" class="add"><i class="material-icons" data-toggle="tooltip" title="Add prescription">add</i></a>
 
                                 
                             </td>
@@ -460,7 +460,7 @@
                             <td>12356</td>
                             <td>vbs@dcs</td>
                             <td>
-                                <a href="~/Client/Client" class="add"><i class="material-icons" data-toggle="tooltip" title="הוסף מרשם לפציינט">add</i></a>
+                                <a href="~/Client/Client" class="add"><i class="material-icons" data-toggle="tooltip" title="Add prescription">add</i></a>
 
                                
                             </td>
@@ -469,7 +469,7 @@
                     </tbody>
                 </table>
                 <div class="clearfix">
-                    <div class="hint-text">מציג <b>5</b> מתוך <b>25</b> עמודים</div>
+                    <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
                     <ul class="pagination">
                         <li class="page-item disabled"><a href="#">Previous</a></li>
                         <li class="page-item"><a href="#" class="page-link">1</a></li>
@@ -477,7 +477,7 @@
                         <li class="page-item active"><a href="#" class="page-link">3</a></li>
                         <li class="page-item"><a href="#" class="page-link">4</a></li>
                         <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">הבא</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
                     </ul>
                 </div>
             </div>
@@ -493,26 +493,26 @@
             <div class="modal-content">
                 <form>
                     <div class="modal-header">
-                        <h4 class="modal-title">כתוב מרשם</h4>
+                        <h4 class="modal-title">Write Prescription</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>שם </label>
+                            <label>Name </label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>אימייל</label>
+                            <label>E-Mail</label>
                             <input type="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>טלפון</label>
+                            <label>Phone</label>
                             <input class="form-control" type="tel" required>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="ביטול">
-                        <input type="submit" class="btn btn-info" value="שמור">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-info" value="Save">
                     </div>
                 </form>
             </div>

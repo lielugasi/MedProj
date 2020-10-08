@@ -323,18 +323,17 @@
     <!--table customers-->
     <div class="container-xl">
         <div style="text-align:center;">
-            <h1>רשימת מרשמים עבור לקוח</h1>
+            <h1>Prescriptions List for a Customer</h1>
         </div>
         <div class="table-responsive">
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>ניהול <b>מרשמי לקוח</b></h2>
+                            <h2>Prescriptions <b>Management</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addMedModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>הוסף תרופה כמרשם</span></a>
-                            <a href="#deleteCostumerModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>מחק</span></a>
+                            <a href="#addMedModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add Medicine as Prescription</span></a>
                         </div>
                     </div>
                 </div>
@@ -347,11 +346,11 @@
                                     <label for="selectAllb"></label>
                                 </span>
                             </th>
-                            <th>שם תרופה</th>
-                            <th>תאריך התחלה</th>
-                            <th>תאריך סיום</th>
-                            <th>מספר רישוי רופא</th>
-                            <th>פעולות</th>
+                            <th>Name</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Doctor's Liecence No.</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -366,11 +365,7 @@
                             <td>1/1/2020</td>
                             <td>2/2/2020</td>
                             <td>123</td>
-                            <td>
-                                <a href="#editCostumerModal" class="add" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="עריכה">edit</i></a>
-
-                                <a href="#deleteCostumerModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="מחק">&#xE872;</i></a>
-                            </td>
+                            
                         </tr>
                         <tr>
                             <td>
@@ -383,25 +378,21 @@
                             <td>1/1/2020</td>
                             <td>2/2/2020</td>
                             <td>123</td>
-                            <td>
-                                <a href="#editCostumerModal" class="add" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="עריכה">edit</i></a>
-
-                                <a href="#deleteCostumerModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="מחק">&#xE872;</i></a>
-                            </td>
+                            
                         </tr>
 
                     </tbody>
                 </table>
                 <div class="clearfix">
-                    <div class="hint-text">מציג <b>5</b> מתוך <b>25</b> עמודים</div>
+                    <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
                     <ul class="pagination">
-                        <li class="page-item disabled"><a href="#">הקודם</a></li>
+                        <li class="page-item disabled"><a href="#">Previous</a></li>
                         <li class="page-item"><a href="#" class="page-link">1</a></li>
                         <li class="page-item"><a href="#" class="page-link">2</a></li>
                         <li class="page-item active"><a href="#" class="page-link">3</a></li>
                         <li class="page-item"><a href="#" class="page-link">4</a></li>
                         <li class="page-item"><a href="#" class="page-link">5</a></li>
-                        <li class="page-item"><a href="#" class="page-link">הבא</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
                     </ul>
                 </div>
             </div>
@@ -412,44 +403,44 @@
 
 
     <!-- Edit Modal HTML -->
-    <div id="editCostumerModal" class="modal fade">
+    <!--<div id="editCostumerModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <form style="text-align:right">
                     <div class="modal-header">
-                        <h4 class="modal-title">הוסף תרופה למרשם</h4>
+                        <h4 class="modal-title">Add Medicine to Prescription</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>שם תרופה</label>
+                            <label>Name</label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>מתאריך</label>
+                            <label>From</label>
                             <input type="date" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>עד תאריך</label>
+                            <label>To</label>
                             <input class="form-control" type="date" required>
                         </div>
                         <div class="form-group">
-                            <label>מספר אישור רופא</label>
+                            <label>Doctor's Liecence No.</label>
                             <input class="form-control" type="text" required>
                         </div>
                         <div class="form-group">
-                            <label>שם רופא מאשר</label>
+                            <label>Signature</label>
                             <input class="form-control" type="text" required>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="ביטול">
-                        <input type="submit" class="btn btn-info" value="שמור">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-info" value="Save">
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <!-- Add Modal HTML -->
@@ -458,28 +449,28 @@
             <div class="modal-content">
                 <form style="text-align:right">
                     <div class="modal-header">
-                        <h4 class="modal-title">הוסף תרופה למרשם</h4>
+                        <h4 class="modal-title">Add Medicine to Prescription</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>שם תרופה</label>
+                            <label>Name</label>
                             <input type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>מתאריך</label>
+                            <label>From</label>
                             <input type="date" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>עד תאריך</label>
+                            <label>To</label>
                             <input class="form-control" type="date" required>
                         </div>
                         <div class="form-group">
-                            <label>מספר אישור רופא</label>
+                            <label>Doctor's Liecence No.</label>
                             <input class="form-control" type="text" required>
                         </div>
                         <div class="form-group">
-                            <label>שם רופא מאשר</label>
+                            <label>Signature</label>
                             <input class="form-control" type="text" required>
                         </div>
                     </div>
@@ -493,7 +484,7 @@
     </div>
 
     <!-- Delete Modal HTML -->
-    <div dir="rtl"  id="deleteCostumerModal" class="modal fade">
+    @*<div dir="rtl"  id="deleteCostumerModal" class="modal fade">
         <div class="modal-dialog">
             <div  class="modal-content">
                 <form>
@@ -512,7 +503,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>*@
 
 </body>
 </html>
