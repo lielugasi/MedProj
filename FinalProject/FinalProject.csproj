@@ -395,6 +395,16 @@
     <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BL.BE\BL.BE.csproj">
+      <Project>{7f211d09-aefe-4ca1-ad46-ad55e4d88fd8}</Project>
+      <Name>BL.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{ba98a639-641d-4a1a-9864-874999010d59}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

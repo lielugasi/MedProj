@@ -1,0 +1,11 @@
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\BL.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\BL.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\BL.BE.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\DAL.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\BL.BE.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\DAL.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.pdb

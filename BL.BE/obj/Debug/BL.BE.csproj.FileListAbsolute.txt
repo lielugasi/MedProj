@@ -1,0 +1,6 @@
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL.BE\bin\Debug\BL.BE.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL.BE\bin\Debug\BL.BE.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL.BE\obj\Debug\BL.BE.csprojAssemblyReference.cache
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL.BE\obj\Debug\BL.BE.csproj.CoreCompileInputs.cache
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL.BE\obj\Debug\BL.BE.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL.BE\obj\Debug\BL.BE.pdb
