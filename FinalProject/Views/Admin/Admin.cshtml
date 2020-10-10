@@ -417,8 +417,8 @@
                                     <h2>Medicines <b>Management</b></h2>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="#addMedModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>הוסף תרופה</span></a>
-                                    <a href="#deleteMedModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>מחק</span></a>
+                                    <a href="#addMedModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add Medicine</span></a>
+                                    <a href="#deleteMedModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
                                 </div>
                             </div>
                         </div>
@@ -431,10 +431,10 @@
                                             <label for="selectAll"></label>
                                         </span>
                                     </th>
-                                    <th>שם תרופה</th>
+                                    <th>Product</th>
                                     <th>אימייל</th>
                                     <th>טלפון</th>
-                                    <th>פעולות</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -625,7 +625,7 @@
                                     </th>
                                     <th>Name</th>
                                     <th>Exxpertise</th>
-                                    <th>Actions</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -747,16 +747,16 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">מחיקת רופא</h4>
+                                <h4 class="modal-title">Delete Doctor</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <p> אתה בטוח שברצונך למחוק שורה זו?</p>
-                                <p class="text-warning"><small>לא ניתן יהיה לשחזר נתונים אלה</small></p>
+                                <p> Are you sure you want to delete this line?</p>
+                                <p class="text-warning"><small>This data will not be recoverable</small></p>
                             </div>
                             <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="ביטול">
-                                <input type="submit" class="btn btn-danger" value="מחק">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelל">
+                                <input type="submit" class="btn btn-danger" value="Delete">
                             </div>
                         </form>
                     </div>
@@ -772,11 +772,11 @@
                         <div class="table-title">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h2>ניהול <b>לקוחות</b></h2>
+                                    <h2>Customers <b>Managemnt</b></h2>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="#addCostumerModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>הוסף לקוח</span></a>
-                                    <a href="#deleteCostumerModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>מחק</span></a>
+                                    <a href="#addCostumerModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add customer</span></a>
+                                    <a href="#deleteCostumerModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
                                 </div>
                             </div>
                         </div>
@@ -789,10 +789,10 @@
                                             <label for="selectAllb"></label>
                                         </span>
                                     </th>
-                                    <th>שם</th>
-                                    <th>סיסמא</th>
-
-                                    <th>פעולות</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>E-Mail</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -830,7 +830,7 @@
                             </tbody>
                         </table>
                         <div class="clearfix">
-                            <div class="hint-text">מציג <b>5</b> מתוך <b>25</b> עמודים</div>
+                            <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
                             <ul class="pagination">
                                 <li class="page-item disabled"><a href="#">Previous</a></li>
                                 <li class="page-item"><a href="#" class="page-link">1</a></li>
@@ -838,7 +838,7 @@
                                 <li class="page-item active"><a href="#" class="page-link">3</a></li>
                                 <li class="page-item"><a href="#" class="page-link">4</a></li>
                                 <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                <li class="page-item"><a href="#" class="page-link">הבא</a></li>
+                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
                             </ul>
                         </div>
                     </div>
@@ -850,27 +850,27 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">הוספת לקוח</h4>
+                                <h4 class="modal-title">Add Customer</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label>שם</label>
+                                    <label>Name</label>
                                     <input type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>אימייל</label>
+                                    <label>E-Mail</label>
                                     <input class="form-control" type="email" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>טלפון</label>
+                                    <label>Phone</label>
                                     <input type="tel" class="form-control" required>
                                 </div>
 
                             </div>
                             <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="ביטול">
-                                <input type="submit" class="btn btn-success" value="הוסף">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                <input type="submit" class="btn btn-success" value="Add">
                             </div>
                         </form>
                     </div>
@@ -882,26 +882,26 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">ערוך לקוח</h4>
+                                <h4 class="modal-title">Edit Customer</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label>שם </label>
+                                    <label>Name</label>
                                     <input type="text" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>אימייל</label>
+                                    <label>E-Mail</label>
                                     <input type="email" class="form-control" required>
                                 </div>
                                 <div class="form-group">
-                                    <label>טלפון</label>
+                                    <label>Phone</label>
                                     <input class="form-control" type="tel" required>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="ביטול">
-                                <input type="submit" class="btn btn-info" value="שמור">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                <input type="submit" class="btn btn-info" value="Save">
                             </div>
                         </form>
                     </div>
@@ -914,16 +914,16 @@
                     <div class="modal-content">
                         <form>
                             <div class="modal-header">
-                                <h4 class="modal-title">מחיקת לקוח</h4>
+                                <h4 class="modal-title">Delete Customer</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                             </div>
                             <div class="modal-body">
-                                <p> אתה בטוח שברצונך למחוק שורה זו?</p>
-                                <p class="text-warning"><small>לא ניתן יהיה לשחזר נתונים אלה</small></p>
+                                <p> Are you sure you want to delete this line?</p>
+                                <p class="text-warning"><small>This data will not be recoverable</small></p>
                             </div>
                             <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="ביטול">
-                                <input type="submit" class="btn btn-danger" value="מחק">
+                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                <input type="submit" class="btn btn-danger" value="Delete">
                             </div>
                         </form>
                     </div>
