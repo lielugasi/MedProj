@@ -1,5 +1,7 @@
-﻿using System;
+﻿using BL;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -20,6 +22,8 @@ namespace FinalProject.Controllers
             return View();
         }
 
+       
+
         // GET: Home/Create
         public ActionResult Create()
         {
@@ -28,18 +32,36 @@ namespace FinalProject.Controllers
 
         // POST: Home/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public bool Create(FormCollection collection)
         {
-            try
-            {
-                // TODO: Add insert logic here
+            HttpFileCollectionBase files = Request.Files;
+            int length = files[0].ContentLength;
+            var bytes = new byte[length];
+            var file = files[0];
+            file.InputStream.Read(bytes,0,length);
+            string fileName = Path.GetFileName(file.FileName);
+            if (!Directory.Exists(@"D:\apptest\"))
+                Directory.CreateDirectory(@"D:\apptest\");
+            string path = @"D:\apptest\"+ fileName;
+            System.IO.File.WriteAllBytes(path,bytes);
+           // var img = "pill2.jpg";
+           // var path = Server.MapPath(Url.Content($"~/images/{img}"));
+            BL.ImageValidateLogic bl = new ImageValidateLogic();
+           // System.IO.File.Delete(path);
+         return   bl.CheckImage(path);
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+
+
+            //try
+            //{
+            //    // TODO: Add insert logic here
+
+            //    return RedirectToAction("Index");
+            //}
+            //catch
+            //{
+            //    return View();
+            //}
         }
 
         // GET: Home/Edit/5

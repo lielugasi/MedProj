@@ -9,3 +9,7 @@ C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.cspr
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.csproj.CopyComplete
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.dll
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\obj\Debug\BL.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\RestSharp.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\RestSharp.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Newtonsoft.Json.xml
