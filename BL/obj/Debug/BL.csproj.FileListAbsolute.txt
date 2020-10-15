@@ -13,3 +13,15 @@ C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\RestSha
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Newtonsoft.Json.dll
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\RestSharp.xml
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Drive.v3.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Auth.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Core.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Drive.v3.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Auth.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Core.pdb
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Core.xml
