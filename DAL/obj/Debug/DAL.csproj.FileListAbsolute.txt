@@ -30,3 +30,35 @@ C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\Entity
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.xml
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\DAL.dll.config
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\DAL.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\DAL.pdb
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\BL.BE.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\EntityFramework.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Auth.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Core.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Drive.v3.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\RestSharp.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\BL.BE.pdb
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\EntityFramework.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.pdb
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Auth.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Core.pdb
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Core.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Drive.v3.pdb
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\bin\Debug\RestSharp.xml
+C:\Users\ayala\Desktop\pro\MedProj\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\ayala\Desktop\pro\MedProj\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ayala\Desktop\pro\MedProj\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\ayala\Desktop\pro\MedProj\DAL\obj\Debug\DAL.dll
+C:\Users\ayala\Desktop\pro\MedProj\DAL\obj\Debug\DAL.pdb

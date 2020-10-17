@@ -28,3 +28,33 @@ C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\EntityFramework.dll
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\DAL.dll.config
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\EntityFramework.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\BL.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\BL.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\BL.BE.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\DAL.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Drive.v3.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Auth.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\RestSharp.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\EntityFramework.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Core.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\BL.BE.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\DAL.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\DAL.dll.config
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Drive.v3.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Auth.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\RestSharp.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\EntityFramework.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Core.pdb
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Google.Apis.Core.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ayala\Desktop\pro\MedProj\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\ayala\Desktop\pro\MedProj\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\ayala\Desktop\pro\MedProj\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\ayala\Desktop\pro\MedProj\BL\obj\Debug\BL.dll
+C:\Users\ayala\Desktop\pro\MedProj\BL\obj\Debug\BL.pdb

@@ -21,7 +21,7 @@ namespace DAL
 
 
 
-        /*public void AddImageMedicines(int id, HttpPostedFileBase file)//// איילה
+        /*public void AddImageMedicines(int id, HttpPostedFileBase file)//// עצמן איילה
         {
             using (var ctx = new MedicineContext())
             {
