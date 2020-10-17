@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoctorsBL.cs" />
     <Compile Include="ImageTagsLogic.cs" />
     <Compile Include="ImageValidateLogic.cs" />
+    <Compile Include="MedicinesBL.cs" />
+    <Compile Include="PatientsBL.cs" />
+    <Compile Include="PrescriptioonsBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

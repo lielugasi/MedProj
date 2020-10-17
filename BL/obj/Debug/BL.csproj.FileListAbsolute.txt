@@ -25,3 +25,6 @@ C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.xml
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Core.pdb
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\Google.Apis.Core.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\EntityFramework.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\DAL.dll.config
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\BL\bin\Debug\EntityFramework.xml

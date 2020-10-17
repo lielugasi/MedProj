@@ -25,3 +25,8 @@ C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\Google
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\Google.Apis.Core.xml
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\Google.Apis.Drive.v3.pdb
 C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\Google.Apis.Drive.v3.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\DAL.dll.config
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.xml
+C:\Users\lielu\OneDrive\שולחן העבודה\Med project\DAL\bin\Debug\EntityFramework.SqlServer.xml
