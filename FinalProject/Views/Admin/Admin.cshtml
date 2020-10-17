@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap CRUD Data Table for Database with Modal Form</title>
+    <title>Admin Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -328,593 +328,672 @@
     </style>
     <script src="~/js/admin.js"></script>
 </head>
-        <body>
+<body>
 
-            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-                <div class="top-area" style="height:40px">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6">
-                                <p class="bold text-right" style="white-space: pre;">Sunday-Thursday. 9AM-3PM  </p>
-                            </div>                      
-                        </div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="top-area" style="height:40px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <p class="bold text-right" style="white-space: pre;">Sunday-Thursday. 9AM-3PM  </p>
                     </div>
                 </div>
-                <div class="container navigation">
+            </div>
+        </div>
+        <div class="container navigation">
 
-                    <div class="navbar-header page-scroll">
-                        @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>*@
-                        <a class="navbar-brand" href="index.html">
-                            <img src="~/img/logo.png" alt="" width="150" height="40" />
-                        </a>
+            <div class="navbar-header page-scroll">
+                @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>*@
+                <a class="navbar-brand" href="index.html">
+                    <img src="~/img/logo.png" alt="" width="150" height="40" />
+                </a>
 
 
-                    </div>
-                    <div style="display:flex; ">
+            </div>
+            <div style="display:flex; ">
 
-                        <a href="#med" style="margin-right:10px; cursor:pointer;">Medicines Management</a>
-                        <a href="#pats" style="margin-right:10px; cursor:pointer;">Doctors Management</a>
-                        <a href="#cust" style="margin-right:10px; cursor:pointer;">Customers Management</a>
-                        <a href="~/" style="margin-right:10px; cursor:pointer;">Home</a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    @*<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#intro">Home</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#doctor">Doctors</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>סוג משתמש <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a onclick="changedAccount(this)">רופא</a></li>
-                        <li><a onclick="changedAccount(this)">מנהל מערכת</a></li>
+                <a href="#med" style="margin-right:10px; cursor:pointer;">Medicines Management</a>
+                <a href="#pats" style="margin-right:10px; cursor:pointer;">Doctors Management</a>
+                <a href="#cust" style="margin-right:10px; cursor:pointer;">Customers Management</a>
+                <a href="~/" style="margin-right:10px; cursor:pointer;">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            @*<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#intro">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#doctor">Doctors</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right">Extra</span>סוג משתמש <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="changedAccount(this)">רופא</a></li>
+                                <li><a onclick="changedAccount(this)">מנהל מערכת</a></li>
 
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-            </ul>
-        </div>*@
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container -->
-            </nav>
+                </div>*@
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
 
 
 
+    <!--טבלת תרופות-->
 
-
-            <div class="container-xl" id="med">
-                <div class="table-responsive">
-                    <div class="table-wrapper">
-                        <div class="table-title">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h2>Medicines <b>Management</b></h2>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="#addMedModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add Medicine</span></a>
-                                    <a href="#deleteMedModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
-                                </div>
-                            </div>
+    <div class="container-xl" id="med">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Medicines <b>Management</b></h2>
                         </div>
-                        <table class="table table-striped table-hover" >
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="selectAll">
-                                            <label for="selectAll"></label>
-                                        </span>
-                                    </th>
-                                    <th>Product</th>
-                                    <th>אימייל</th>
-                                    <th>טלפון</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                                            <label for="checkbox1"></label>
-                                        </span>
-                                    </td>
-                                    <td>Thomas Hardy</td>
-                                    <td>thomashardy@mail.com</td>
-
-                                    <td>(171) 555-2222</td>
-                                    <td>
-
-                                        <a href="#editMedModal" class="edit editWithPic" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                        <a href="#deleteMedModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        <a href="~/Chart/Chart" class="show_chart"><i class="material-icons" data-toggle="tooltip" title="Chart">show_chart</i></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox2" name="options[]" value="1">
-                                            <label for="checkbox2"></label>
-                                        </span>
-                                    </td>
-                                    <td>Dominique Perrier</td>
-                                    <td>dominiqueperrier@mail.com</td>
-
-                                    <td>(313) 555-5735</td>
-                                    <td>
-                                        <a href="#editMedModal" class="edit editWithPic" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                        <a href="#deleteMedModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                        <a href="~/Chart/Chart" class="show_chart"><i class="material-icons" data-toggle="tooltip" title="Chart">show_chart</i></a>
-
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <div class="clearfix">
-                            <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
-                            <ul class="pagination">
-                                <li class="page-item disabled"><a href="#">Previous</a></li>
-                                <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                                <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                            </ul>
+                        <div class="col-sm-6">
+                            <a href="#addMedModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add Medicine</span></a>
+                            <a href="#deleteMedModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Add Modal HTML תרופה -->
-            <div id="addMedModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Add Medicine</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Tradename</label>
-                                    <input type="text" id="tradeId" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Manufacturer</label>
-                                    <input type="text" id="manuId" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Generic Name</label>
-                                    <input  id="genId" class="form-control" type="text" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Active Ingredients</label>
-                                    <input id="actId" type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label> Portion Properties</label>
-                                    <input id="portId" type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Picture</label>
-                                    <input type="file" class="form-control"  id="uploadSubmit" required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input onclick="upload();"  type="submit" class="btn btn-success" value="Add">
-                            </div>
-                        </form>
-                    </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="selectAll">
+                                    <label for="selectAll"></label>
+                                </span>
+                            </th>
+                            <th>Trade Name</th>
+                            <th>Manufactor</th>
+                            <th>Generic Name</th>
+                            <th>Active Ingredients</th>
+                            <th>Portion Properties</th>
+                            <th>Picture</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+
+                                <a href="#editMedModal" class="edit editWithPic" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteMedModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <a href="~/Chart/Chart" class="show_chart"><i class="material-icons" data-toggle="tooltip" title="Chart">show_chart</i></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                    <label for="checkbox1"></label>
+                                </span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+
+                                <a href="#editMedModal" class="edit editWithPic" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteMedModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                <a href="~/Chart/Chart" class="show_chart"><i class="material-icons" data-toggle="tooltip" title="Chart">show_chart</i></a>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="clearfix">
+                    <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#">Previous</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
                 </div>
             </div>
-            <!-- Edit Modal HTML תרופה -->
-            <div id="editMedModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Edit Medicine</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Tradename</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Manufacturer</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Generic Name</label>
-                                    <input class="form-control" type="text" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Active Ingredients</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label> מאפייני מנה</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Picture</label>
-                                    <input type="file" class="form-control" id="fileInput"  required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-info" value="Save" id="submitEdit">
-                            </div>
-                        </form>
+        </div>
+    </div>
+    <!-- Add Modal HTML תרופה -->
+    <div id="addMedModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Medicine</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
-                </div>
-            </div>
-            <!-- Delete Modal HTML -->
-            <div id="deleteMedModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Delete Medicine</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p> Are you sure you want to delete this line?</p>
-                                <p class="text-warning"><small>This data will not be recoverable</small></p>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-danger" value="Delete">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <!--table edit doctor-->
-            <div class="container-xl" id="pats">
-                <div class="table-responsive">
-                    <div class="table-wrapper">
-                        <div class="table-title">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h2>Doctors <b>Management</b></h2>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="#addDoctorModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add Doctor</span></a>
-                                    <a href="#deleteDoctorModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
-                                </div>
-                            </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Tradename</label>
+                            <input type="text" id="AMedTrade" class="form-control" required>
                         </div>
-                        <table class="table table-striped table-hover" >
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="selectAllb">
-                                            <label for="selectAllb"></label>
-                                        </span>
-                                    </th>
-                                    <th>Name</th>
-                                    <th>Exxpertise</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox1b" name="options[]" value="1">
-                                            <label for="checkbox1b"></label>
-                                        </span>
-                                    </td>
-                                    <td>Thomas Hardy</td>
-
-                                    <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                    <td>
-                                        <a href="#editDoctorModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                        <a href="#deleteDoctorModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox2b" name="options[]" value="1">
-                                            <label for="checkbox2b"></label>
-                                        </span>
-                                    </td>
-                                    <td>Dominique Perrier</td>
-
-                                    <td>Obere Str. 57, Berlin, Germany</td>
-                                    <td>
-                                        <a href="#editDoctorModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                        <a href="#deleteDoctorModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <div class="clearfix">
-                            <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
-                            <ul class="pagination">
-                                <li class="page-item disabled"><a href="#">Previous</a></li>
-                                <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                                <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                            </ul>
+                        <div class="form-group">
+                            <label>Manufacturer</label>
+                            <input type="text" id="AMedManu" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Generic Name</label>
+                            <input id="AMedGen" class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Active Ingredients</label>
+                            <input id="AMedAct" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label> Portion Properties</label>
+                            <input id="AMedProp" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Picture</label>
+                            <input type="file" class="form-control" id="uploadSubmit" required>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Edit Modal HTML רופא-->
-            <div id="addDoctorModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Add Doctor</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>E-Mail</label>
-                                    <input class="form-control" type="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone</label>
-                                    <input type="tel" class="form-control" required>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-success" value="Delete">
-                            </div>
-                        </form>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input onclick="upload();" type="submit" class="btn btn-success" value="Add">
                     </div>
-                </div>
+                </form>
             </div>
-            <!-- Edit Modal HTML -->
-            <div id="editDoctorModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Edit Doctor</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Name </label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>E-Mail</label>
-                                    <input type="email" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone</label>
-                                    <input class="form-control" type="tel" required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-info" value="Save">
-                            </div>
-                        </form>
+        </div>
+    </div>
+    <!-- Edit Modal HTML תרופה -->
+    <div id="editMedModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Medicine</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
-                </div>
-            </div>
-
-            <!-- Delete Modal HTML -->
-            <div id="deleteDoctorModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Delete Doctor</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p> Are you sure you want to delete this line?</p>
-                                <p class="text-warning"><small>This data will not be recoverable</small></p>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelל">
-                                <input type="submit" class="btn btn-danger" value="Delete">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!--table customers-->
-            <div class="container-xl" id="cust">
-                <div class="table-responsive">
-                    <div class="table-wrapper">
-                        <div class="table-title">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h2>Customers <b>Managemnt</b></h2>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="#addCostumerModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add customer</span></a>
-                                    <a href="#deleteCostumerModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
-                                </div>
-                            </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Tradename</label>
+                            <input id=" EMedTrade" type="text" class="form-control" required>
                         </div>
-                        <table class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="selectAllb">
-                                            <label for="selectAllb"></label>
-                                        </span>
-                                    </th>
-                                    <th>Name</th>
-                                    <th>Phone</th>
-                                    <th>E-Mail</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox1b" name="options[]" value="1">
-                                            <label for="checkbox1b"></label>
-                                        </span>
-                                    </td>
-                                    <td>Thomas Hardy</td>
-                                    <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                    <td>abc@mail</td>
-                                    <td>
-                                        <a href="#editCostumerModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                        <a href="#deleteCostumerModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="custom-checkbox">
-                                            <input type="checkbox" id="checkbox2b" name="options[]" value="1">
-                                            <label for="checkbox2b"></label>
-                                        </span>
-                                    </td>
-                                    <td>Dominique Perrier</td>
-                                    <td>Obere Str. 57, Berlin, Germany</td>
-                                    <td>def@mail</td>
-                                    <td>
-                                        <a href="#editCostumerModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                        <a href="#deleteCostumerModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                    </td>
-                                </tr>
+                        <div class="form-group">
+                            <label>Manufacturer</label>
+                            <input id="EMedManu" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Generic Name</label>
+                            <input id="EMedGen" class="form-control" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Active Ingredients</label>
+                            <input id="EMedAct" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Portion Properties</label>
+                            <input id="EMedProp" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Picture</label>
+                            <input type="file" class="form-control" id="fileInput" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-info" value="Save" id="submitEdit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-                            </tbody>
-                        </table>
-                        <div class="clearfix">
-                            <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
-                            <ul class="pagination">
-                                <li class="page-item disabled"><a href="#">Previous</a></li>
-                                <li class="page-item"><a href="#" class="page-link">1</a></li>
-                                <li class="page-item"><a href="#" class="page-link">2</a></li>
-                                <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                                <li class="page-item"><a href="#" class="page-link">4</a></li>
-                                <li class="page-item"><a href="#" class="page-link">5</a></li>
-                                <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                            </ul>
+    <!-- Delete Modal HTML תרופה-->
+    <div id="deleteMedModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete Medicine</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Are you sure you want to delete this line?</p>
+                        <p class="text-warning"><small>This data will not be recoverable</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-danger" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--טבלת רופאים-->
+    <div class="container-xl" id="pats">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Doctors <b>Management</b></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#addDoctorModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add Doctor</span></a>
+                            <a href="#deleteDoctorModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Add Modal HTML -->
-            <div id="addCostumerModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Add Customer</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>E-Mail</label>
-                                    <input class="form-control" type="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone</label>
-                                    <input type="tel" class="form-control" required>
-                                </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="selectAllb">
+                                    <label for="selectAllb"></label>
+                                </span>
+                            </th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Id</th>
+                            <th>Password</th>
+                            <th>Phone Number</th>
+                            <th>E-Mail</th>
+                            <th>Specialty</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1b" name="options[]" value="1">
+                                    <label for="checkbox1b"></label>
+                                </span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="#editDoctorModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteDoctorModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1b" name="options[]" value="1">
+                                    <label for="checkbox1b"></label>
+                                </span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="#editDoctorModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteDoctorModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            </td>
+                        </tr>
 
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-success" value="Add">
-                            </div>
-                        </form>
-                    </div>
+                    </tbody>
+                </table>
+                <div class="clearfix">
+                    <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#">Previous</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
                 </div>
             </div>
-            <!-- Edit Modal HTML -->
-            <div id="editCostumerModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Edit Customer</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>E-Mail</label>
-                                    <input type="email" class="form-control" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Phone</label>
-                                    <input class="form-control" type="tel" required>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-info" value="Save">
-                            </div>
-                        </form>
+        </div>
+    </div>
+    <!-- Add Modal HTML רופא-->
+    <div id="addDoctorModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Doctor</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input id="ADocFName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input id="ADocLName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Id</label>
+                            <input id="ADocId" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input id="ADocPass" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input id="ADocPhone" type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-Mail</label>
+                            <input id="ADocMail" class="form-control" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Speciality</label>
+                            <input id="ADocSpec" class="form-control" type="email" required>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-success" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal HTML רופא -->
+    <div id="editDoctorModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Doctor</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input id="EDocFName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input id="EDocLName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Id</label>
+                            <input id="EDocId" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input id="EDocPass" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input id="EDocPhone" type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-Mail</label>
+                            <input id="EDocMail" class="form-control" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Speciality</label>
+                            <input id="EDocSpec" class="form-control" type="email" required>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-success" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal HTML רופא -->
+    <div id="deleteDoctorModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete Doctor</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Are you sure you want to delete this line?</p>
+                        <p class="text-warning"><small>This data will not be recoverable</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelל">
+                        <input type="submit" class="btn btn-danger" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--טבלת לקוחות-->
+    <div class="container-xl" id="cust">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Customers <b>Managemnt</b></h2>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="#addCostumerModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add customer</span></a>
+                            <a href="#deleteCostumerModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="selectAllb">
+                                    <label for="selectAllb"></label>
+                                </span>
+                            </th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Id</th>
+                            <th>Phone Number</th>
+                            <th>Adress</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1b" name="options[]" value="1">
+                                    <label for="checkbox1b"></label>
+                                </span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="#editCostumerModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteCostumerModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="checkbox1b" name="options[]" value="1">
+                                    <label for="checkbox1b"></label>
+                                </span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="#editCostumerModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                <a href="#deleteCostumerModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                            </td>
+                        </tr>
 
-            <!-- Delete Modal HTML -->
-            <div id="deleteCostumerModal" class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Delete Customer</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <p> Are you sure you want to delete this line?</p>
-                                <p class="text-warning"><small>This data will not be recoverable</small></p>
-                            </div>
-                            <div class="modal-footer">
-                                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                                <input type="submit" class="btn btn-danger" value="Delete">
-                            </div>
-                        </form>
-                    </div>
+                    </tbody>
+                </table>
+                <div class="clearfix">
+                    <div class="hint-text">Show <b>5</b> out of <b>25</b> Pages</div>
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#">Previous</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- Add Modal HTML לקוח -->
+    <div id="addCostumerModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Customer</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input id="ACustFName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input id="ACustLName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Id</label>
+                            <input id="ACustId" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input id="ACustPhone" type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Adress</label>
+                            <input id="ACustAdress" class="form-control" type="email" required>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-success" value="Add">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Modal HTML -->
+    <div id="editCostumerModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Customer</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input id="ECustFName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input id="ECustLName" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Id</label>
+                            <input id="ECustId" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input id="ECustPhone" type="tel" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Adress</label>
+                            <input id="ECustAdress" class="form-control" type="email" required>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-success" value="Add">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal HTML -->
+    <div id="deleteCostumerModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete Customer</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Are you sure you want to delete this line?</p>
+                        <p class="text-warning"><small>This data will not be recoverable</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                        <input type="submit" class="btn btn-danger" value="Delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
-            
-        </body>
+
+</body>
         </html>

@@ -344,9 +344,11 @@
                                     <label for="selectAllb"></label>
                                 </span>
                             </th>
-                            <th>Name</th>
+                            <th>NDC</th>
                             <th>Start Date</th>
                             <th>End Date</th>
+                            <th>Time To Take</th>
+                            <th>Amount</th>
                             <th>Doctor's Liecence No.</th>
 
                         </tr>
@@ -359,10 +361,12 @@
                                     <label for="checkbox1b"></label>
                                 </span>
                             </td>
-                            <td>אקמול</td>
-                            <td>1/1/2020</td>
-                            <td>2/2/2020</td>
-                            <td>123</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
 
                         </tr>
                         <tr>
@@ -372,10 +376,12 @@
                                     <label for="checkbox1b"></label>
                                 </span>
                             </td>
-                            <td>אקמול</td>
-                            <td>1/1/2020</td>
-                            <td>2/2/2020</td>
-                            <td>123</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
 
                         </tr>
 
@@ -439,6 +445,7 @@
             </div>
         </div>
     </div>-->
+
     <!-- Add Modal HTML -->
     <div id="addMedModal" class="modal fade">
         <div class="modal-dialog">
@@ -450,24 +457,32 @@
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" class="form-control" required />
+                            <label>NDC</label>
+                            <input id="AClientNdc" type="text" class="form-control" required />
                         </div>
                         <div class="form-group">
-                            <label>From</label>
-                            <input type="date" class="form-control" required>
+                            <label>Start Date</label>
+                            <input id="AClientStart" type="date" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>To</label>
-                            <input class="form-control" type="date" required>
+                            <label>End Date</label>
+                            <input id="AClientEnd" class="form-control" type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time To Take</label>
+                            <input id="AClientTime" class="form-control" type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Amount</label>
+                            <input id="AClientAmount" class="form-control" type="date" required>
                         </div>
                         <div class="form-group">
                             <label>Doctor's Liecence No.</label>
-                            <input class="form-control" type="text" required>
+                            <input id="AClientLiecence" class="form-control" type="text" required>
                         </div>
                         <div class="form-group">
                             <label>Signature</label>
-                            <input class="form-control" type="text" required>
+                            <input id="AClientSig" class="form-control" type="text" required>
                         </div>
                     </div>
                     <div class="modal-footer">
