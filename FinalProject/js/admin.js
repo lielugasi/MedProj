@@ -144,3 +144,88 @@ function upload() {
     });
 }
 
+function AddMedicine() {
+    var name = document.getElementById('AMedTrade');
+    var manu = document.getElementById('AMedManu');
+    var gen = document.getElementById('AMedGen');
+    var ingredients = document.getElementById('AMedAct');
+    var properties = document.getElementById('AMedProp');
+
+}
+
+function EditMedicine() {
+    var name = document.getElementById('EMedTrade');
+    var manu = document.getElementById('EMedManu');
+    var gen = document.getElementById('EMedGen');
+    var ingredients = document.getElementById('EMedAct');
+    var properties = document.getElementById('EMedProp');
+
+}
+
+function DeleteMedicine() {
+    var name = document.getElementById('DMedTrade');
+    var manu = document.getElementById('DMedManu');
+    var gen = document.getElementById('DMedGen');
+    var ingredients = document.getElementById('DMedAct');
+    var properties = document.getElementById('DMedProp');
+
+}
+
+function AddDoctor() {
+    var firstName = document.getElementById('ADocFName');
+    var lasttName = document.getElementById('ADocLName');
+    var id = document.getElementById('ADocId');
+    var password = document.getElementById('ADocPass');
+    var phone = document.getElementById('ADocPhone');
+    var mail = document.getElementById('ADocMail');
+    var specialty = document.getElementById('ADocSpec');
+}
+
+function EditDoctor() {
+    var firstName = document.getElementById('EDocFName');
+    var lasttName = document.getElementById('EDocLName');
+    var id = document.getElementById('EDocId');
+    var password = document.getElementById('EDocPass');
+    var phone = document.getElementById('EDocPhone');
+    var mail = document.getElementById('EDocMail');
+    var specialty = document.getElementById('EDocSpec');
+
+}
+
+function DeleteDoctor{
+
+}
+
+function AddCustomer() {
+    var firstName = document.getElementById('ACustFName');
+    var lasttName = document.getElementById('ACustLName');
+    var id = document.getElementById('ACustId');
+    var adress = document.getElementById('ACustAdress');
+    var phone = document.getElementById('ACustPhone');
+
+
+}
+
+function EditCustomer() {
+    var firstName = document.getElementById('ECustFName');
+    var lasttName = document.getElementById('ECustLName');
+    var id = document.getElementById('ECustId');
+    var adress = document.getElementById('ECustAdress');
+    var phone = document.getElementById('ECustPhone');
+
+}
+
+function DeleteCustomer(){
+
+}
+
+function AddPrescription() {
+    var ndc = document.getElementById('AClientNdc');
+    var start = document.getElementById('AClientStart');
+    var end = document.getElementById('AClientEnd');
+    var time = document.getElementById('AClientTime');
+    var amount = document.getElementById('AClientAmount');
+    var liecence = document.getElementById('AClientLiecence');
+    var signeture = document.getElementById('AClientSig');
+}
+
